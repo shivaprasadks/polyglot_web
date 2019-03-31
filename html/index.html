@@ -5,8 +5,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Polyglot</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <link rel="stylesheet" type="text/css" media="screen" href="../css/stylesheet.css" />
+      
    </head>
    <header>
         <nav>
@@ -19,9 +21,9 @@
              </nav>
    </header>
    <body>
-        <div class="card">
+        <div class="card animated fadeInUp ">
         <form method="" action="#" >
-                <div class="input-field col s12">
+                <div class="input-field col s12 animated fadeIn delay-1s">
                         <select>
                           <option value="" disabled selected>Choose your option</option>
                           <option value="java">Java</option>
@@ -93,12 +95,23 @@
                           <option value="whitespace">Whitespace</option>
                         </select>
                     </div>
-                    <textarea 
-                        id="textarea1"
-                        class="custom-textarea"
-                        placeholder="# your code goes here"
-                        cols="50"></textarea>
-                 <label for="textarea1">geeks</label>
+                    <div class="common-area animated fadeIn" >
+                        <div class="items animated fadeInLeft delay-1s">
+                            <textarea 
+                                id="sourceCode"
+                                class="custom-textarea"
+                                placeholder="# your code goes here"
+                                cols="50"></textarea>
+                                <a class="waves-effect waves-light btn" id="pushMe">Run</a>
+                        </div>
+                        <div class="items animated fadeInRight delay-1s">
+                                <label >Output:</label> 
+                                <div class="output-area" id="myOutput">
+    
+                                </div>
+                            </div>
+                    </div>
+                    
         </form>
         </div>
    </body>
@@ -125,5 +138,5 @@
       </div>
    </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
-   <script src="../js/homepage.js" type="javascript/text" ></script>
+   <script src="../js/homepage.js"></script>
 </html>

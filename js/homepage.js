@@ -1,11 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-    var instance = M.FormSelect.getInstance(elem);
-  });
-
-  // Or with jQuery
-
-//   $('.dropdown-trigger').dropdown();
-
-  console.log('sdfghjkl')
+//using vanilla js for the better understanding
+(function () {
+    // private
+    document.getElementById('pushMe').addEventListener('click',function(e){
+        var source = document.getElementById('sourceCode').value;
+    })
+  }());
