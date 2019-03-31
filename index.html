@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link rel="stylesheet" type="text/css" media="screen" href="../css/stylesheet.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/stylesheet.css" />
       
    </head>
    <header>
@@ -24,14 +24,14 @@
         <div class="card animated fadeInUp ">
         <form method="" action="#" >
                 <div class="input-field col s12 animated fadeIn delay-1s">
-                        <select>
-                          <option value="" disabled selected>Choose your option</option>
+                        <select id="langList">
+                          <option value="" disabled >Choose your option</option>
                           <option value="java">Java</option>
                           <option value="c">C</option>
                           <option value="c99">C-99</option>
                           <option value="cpp">C++</option>
                           <option value="cpp14">C++ 14</option>
-                          <option value="php">PHP</option>
+                          <option value="php" selected>PHP</option>
                           <option value="perl">Perl</option>
                           <option value="python2">Python 2</option>
                           <option value="python3">Python 3</option>
@@ -101,7 +101,7 @@
                                 id="sourceCode"
                                 class="custom-textarea"
                                 placeholder="# your code goes here"
-                                cols="50"></textarea>
+                                cols="50"><?php echo 'hello maum'; ?></textarea>
                                 <a class="waves-effect waves-light btn" id="pushMe">Run</a>
                         </div>
                         <div class="items animated fadeInRight delay-1s">
@@ -138,5 +138,5 @@
       </div>
    </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
-   <script src="../js/homepage.js"></script>
+   <script src="./js/homepage.js"></script>
 </html>
