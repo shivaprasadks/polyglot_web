@@ -10,3 +10,45 @@ body {
   main {
     flex: 1 0 auto;
   }
+  select {
+    display: block;
+}
+
+.input-field{
+   padding: 20px;
+   margin: 10px;
+}
+.input-field > select {
+    width: 20%;
+}
+.card{
+    margin: 10px;
+}
+.custom-textarea{
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    background: #f7f7f7;
+}
+.common-area{
+    display: flex;
+    justify-content: center;
+}
+.common-area > .items{
+    flex-basis: 50%;
+    margin: 10px 0 10px 30px;
+}
+.items > label {
+    color: black;
+    margin-bottom: 5px;
+}
+.output-area {
+    font-family: "Courier New", Courier, monospace;
+    border: solid 1px #aaaaaa6b;
+    border-radius: 4px;
+    height: 90px;
+    padding: 10px;
+    margin-right: 20px;
+    background: #f7f7f7;
+    color: black;
+}

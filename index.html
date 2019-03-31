@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Polyglot</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/stylesheet.css" />
+      
+   </head>
+   <header>
+        <nav>
+                <div class="nav-wrapper">
+                   <a href="#" class="brand-logo">Polyglot</a>
+                   <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="collapsible.html">About Us</a></li>
+                   </ul>
+                </div>
+             </nav>
+   </header>
+   <body>
+        <div class="card animated fadeInUp ">
+        <form method="" action="#" >
+                <div class="input-field col s12 animated fadeIn delay-1s">
+                        <select id="langList">
+                          <option value="" disabled >Choose your option</option>
+                          <option value="java">Java</option>
+                          <option value="c">C</option>
+                          <option value="c99">C-99</option>
+                          <option value="cpp">C++</option>
+                          <option value="cpp14">C++ 14</option>
+                          <option value="php" selected>PHP</option>
+                          <option value="perl">Perl</option>
+                          <option value="python2">Python 2</option>
+                          <option value="python3">Python 3</option>
+                          <option value="ruby">Ruby</option>
+                          <option value="go">GO Lang</option>
+                          <option value="scala">Scala</option>
+                          <option value="bash">Bash Shell</option>
+                          <option value="sql">SQL</option>
+                          <option value="pascal">Pascal</option>
+                          <option value="csharp">C#</option>
+                          <option value="vbn">VB.Net</option>
+                          <option value="haskell">Haskell</option>
+                          <option value="objc">Objective C</option>
+                          <option value="swift">Swift</option>
+                          <option value="groovy">Groovy</option>
+                          <option value="fortran">Fortran</option>
+                          <option value="brainfuck">Brainf**k</option>
+                          <option value="lua">Lua</option>
+                          <option value="tcl">TCL</option>
+                          <option value="hack">Hack</option>
+                          <option value="rust">RUST</option>
+                          <option value="d">D</option>
+                          <option value="ada">Ada</option>
+                          <option value="r">R Language</option>
+                          <option value="freebasic">FREE BASIC</option>
+                          <option value="verilog">VERILOG</option>
+                          <option value="cobol">COBOL</option>
+                          <option value="dart">Dart</option>
+                          <option value="yabasic">YaBasic</option>
+                          <option value="clojure">Clojure</option>
+                          <option value="nodejs">NodeJS</option>
+                          <option value="scheme">Scheme</option>
+                          <option value="forth">Forth</option>
+                          <option value="prolog">Prolog</option>
+                          <option value="octave">Octave</option>
+                          <option value="coffeescript">CoffeeScript</option>
+                          <option value="icon">Icon</option>
+                          <option value="fsharp">F#</option>
+                          <option value="nasm">Assembler - NASM</option>
+                          <option value="gccasm">Assembler - GCC</option>
+                          <option value="intercal">Intercal</option>
+                          <option value="nemerle">Nemerle</option>
+                          <option value="ocaml">Ocaml</option>
+                          <option value="unlambda">Unlambda</option>
+                          <option value="picolisp">Picolisp</option>
+                          <option value="spidermonkey">SpiderMonkey</option>
+                          <option value="rhino">Rhino JS</option>
+                          <option value="bc">BC</option>
+                          <option value="clisp">CLISP</option>
+                          <option value="elixir">Elixir</option>
+                          <option value="factor">Factor</option>
+                          <option value="falcon">Falcon</option>
+                          <option value="fantom">Fantom</option>
+                          <option value="nim">Nim</option>
+                          <option value="pike">Pike</option>
+                          <option value="smalltalk">SmallTalk</option>
+                          <option value="mozart">OZ Mozart</option>
+                          <option value="lolcode">LOLCODE</option>
+                          <option value="racket">Racket</option>
+                          <option value="kotlin">Kotlin</option>
+                          <option value="whitespace">Whitespace</option>
+                        </select>
+                    </div>
+                    <div class="common-area animated fadeIn" >
+                        <div class="items animated fadeInLeft delay-1s">
+                            <textarea 
+                                id="sourceCode"
+                                class="custom-textarea"
+                                placeholder="# your code goes here"
+                                cols="50"><?php echo 'hello maum'; ?></textarea>
+                                <a class="waves-effect waves-light btn" id="pushMe">Run</a>
+                        </div>
+                        <div class="items animated fadeInRight delay-1s">
+                                <label >Output:</label> 
+                                <div class="output-area" id="myOutput">
+    
+                                </div>
+                            </div>
+                    </div>
+                    
+        </form>
+        </div>
+   </body>
+   <footer class="page-footer">
+      <div class="container">
+         <div class="row">
+            <div class="col l6 s12">
+               <h5 class="white-text">Polyglot</h5>
+               <p class="grey-text text-lighten-4">This is awesome project</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Github Link</h5>
+               <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Full Script</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer-copyright">
+         <div class="container">
+            © 2019 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+         </div>
+      </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+   <script src="./js/homepage.js"></script>
+</html>
