@@ -1,0 +1,83 @@
+<html>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Polyglot | Chindi project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+                #fullBody , body{
+                    font-family: "Courier New", Courier, monospace;
+                    color: green;
+                    margin: 50px;
+                    background: black;
+                    font-size: 34px;
+                    text-align: center;
+                    text-indent: 30%;
+                    font-style: italic;
+                    line-height: 50px;
+                    font-variant: small-caps;
+                }
+                #toast{
+                height:auto;
+                padding:5px;
+                border-radius: 100%;
+                background:rgba(0,0,0,0.6);
+                opacity:0;
+                width:auto;
+                position:fixed;
+                bottom:0px;
+                margin:auto;
+                
+                }
+                </style>
+<body>
+        <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="player" autoplay loop>
+                <source src="./audio/key_noice.mp3" type="audio/mp3">
+            </audio>
+<!-- <audio controls autoplay>
+        <source src="./audio/key_noice.mp3" type="audio/mpeg">
+       
+        Your browser does not support the audio element.
+      </audio> -->
+
+<div id="toast">???ERROR????</div>
+<div id="fullBody"></div>
+<script>
+
+window.onload = function() {
+  var context = new AudioContext();
+}
+  
+var str="This is full chindi project, high level project,        this project has rose espestations reach unespestation.,   dandlu this is full hoge , yenu gottagtilla, neene yenaadru maadka  ,          Online bandaaga helu👯👯!.......... if you want to infect your device with virus so please wailt a movement  ...........                 uploadingVirus  ......100%     sucessfull   ";
+var arr=str.split("");
+var speed=0;
+setInterval(
+function(){
+if(speed<arr.length){
+document.getElementById("fullBody").innerHTML+=arr[speed++];
+}
+
+},100)
+
+setTimeout(function(){
+toast.style.display="opacity:1";
+
+navigator.vibrate(2000,2000);
+alert("nanunna nambkand project maadtidhyalla 🙃🙃🙃🙃");
+setInterval(function(){
+
+  toast.style.display="opacity:0";
+},1000)
+
+},29300)
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
