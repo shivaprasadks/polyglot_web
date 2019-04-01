@@ -9,10 +9,10 @@
       
 
        var url = 'http://localhost/getData.php';
-        var remoteUrl='http://13.234.128.68/getData.php';
+        var remoteUrl='http://13.234.128.68/php/getData.php';
 
         // fetch('http://13.234.128.68/getData.php', {
-        fetch(url, {
+        fetch(remoteUrl, {
             method: 'post',
             credentials: "same-origin", 
             headers: {
